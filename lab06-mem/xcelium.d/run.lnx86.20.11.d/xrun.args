@@ -1,0 +1,12 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+top.sv
+mem.sv
+mem_test.sv
+-gui
+-access
++rwc
+-licqueue
+-noievlic

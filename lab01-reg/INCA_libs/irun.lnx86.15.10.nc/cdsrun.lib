@@ -1,0 +1,2 @@
+SOFTINCLUDE /pkg/cadence-incisiv-/15.10.027/i686-linux/tools/inca/files/cds.lib
+define worklib ../worklib

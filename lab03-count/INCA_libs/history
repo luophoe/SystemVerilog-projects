@@ -1,0 +1,7 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(09May2022:12:43:26):( /pkg/cadence-incisiv-/15.10.027/i686-linux/tools/bin/irun counter.sv counter_test.sv )
+s2::(09May2022:12:46:54):( /pkg/cadence-incisiv-/15.10.027/i686-linux/tools/bin/irun counter.sv counter_test.sv )
+s3::(09May2022:12:49:13):( /pkg/cadence-incisiv-/15.10.027/i686-linux/tools/bin/irun counter.sv counter_test.sv )

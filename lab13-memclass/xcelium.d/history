@@ -1,0 +1,15 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(17May2022:12:35:38):( /pkg/cadence-xcelium-/20.11.001/i686-linux/tools/bin/xrun top.sv mem.sv mem_test.sv )
+s2::(17May2022:12:40:27):( /pkg/cadence-xcelium-/20.11.001/i686-linux/tools/bin/xrun top.sv mem.sv mem_test.sv )
+s3::(17May2022:12:41:22):( /pkg/cadence-xcelium-/20.11.001/i686-linux/tools/bin/xrun intf.sv top.sv mem.sv mem_test.sv )
+s4::(22May2022:13:57:09):( /pkg/cadence-xcelium-/20.11.001/i686-linux/tools/bin/xrun intf.sv mem.sv mem_test.sv top.sv )
+s5::(22May2022:13:59:18):( /pkg/cadence-xcelium-/20.11.001/i686-linux/tools/bin/xrun intf.sv mem.sv mem_test.sv top.sv )
+s6::(22May2022:14:11:23):( /pkg/cadence-xcelium-/20.11.001/i686-linux/tools/bin/xrun intf.sv mem.sv mem_test.sv top.sv )
+s7::(22May2022:14:14:22):( /pkg/cadence-xcelium-/20.11.001/i686-linux/tools/bin/xrun intf.sv mem.sv mem_test.sv top.sv )
+s8::(22May2022:14:14:54):( /pkg/cadence-xcelium-/20.11.001/i686-linux/tools/bin/xrun intf.sv mem.sv mem_test.sv top.sv )
+s9::(22May2022:14:19:06):( /pkg/cadence-xcelium-/20.11.001/i686-linux/tools/bin/xrun intf.sv mem.sv mem_test.sv top.sv )
+s10::(22May2022:14:19:38):( /pkg/cadence-xcelium-/20.11.001/i686-linux/tools/bin/xrun intf.sv mem.sv mem_test.sv top.sv )
+s11::(22May2022:14:22:31):( /pkg/cadence-xcelium-/20.11.001/i686-linux/tools/bin/xrun intf.sv mem.sv mem_test.sv top.sv )

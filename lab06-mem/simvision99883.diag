@@ -1,0 +1,119 @@
+*** Message Type: info ***
+When: Wed May 11 10:56:55 MST 2022
+SimVision started.
+Version: TOOL:  simvision       20.11-a001
+User: nxf87847
+Host: awv124164.nxdi.us-cdc01.nxp.com
+Platform: Linux/x86_64/3.10.0-1160.36.2.el7.x86_64
+Started: Wed May 11 10:56:55 MST 2022
+Command: /pkg/cadence-xcelium-/20.11.001/i686-linux/tools.lnx86/simvision/bin/simvision.exe -connect dc:awv124164.nxdi.us-cdc01.nxp.com:33810 -nocopyright
+Work Directory: /home/nxf87847/sv_lab/SysVlogDesVer_20_6/lab06-mem
+ 
+*** Message Type: info ***
+When: Wed May 11 10:56:56 MST 2022
+Create browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Wed May 11 10:56:57 MST 2022
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: Wed May 11 10:56:58 MST 2022
+Connect to Simulator
+      Design: worklib.top:sv
+   Languages: verilog
+   Simulator: XM-Sim
+     Version: TOOL:     xmsim   20.11-a001
+        User: nxf87847
+        Host: awv124164.nxdi.us-cdc01.nxp.com
+Time Started: Wed May 11 10:56:53 MST 2022
+  Process ID: 99802
+   Directory: /home/nxf87847/sv_lab/SysVlogDesVer_20_6/lab06-mem
+     Command: xrun top.sv mem.sv mem_test.sv -gui -access +rwc -licqueue -noievlic
+
+ 
+*** Message Type: info ***
+When: Wed May 11 10:57:00 MST 2022
+Create utility window: "Properties"
+ 
+*** Message Type: info ***
+When: Wed May 11 10:58:15 MST 2022
+Create waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: Wed May 11 11:21:09 MST 2022
+Exit XM-Sim: user
+      Design: worklib.top:sv
+   Languages: verilog
+   Simulator: XM-Sim
+     Version: TOOL:     xmsim   20.11-a001
+        User: nxf87847
+        Host: awv124164.nxdi.us-cdc01.nxp.com
+Time Started: Wed May 11 10:56:53 MST 2022
+  Process ID: 99802
+   Directory: /home/nxf87847/sv_lab/SysVlogDesVer_20_6/lab06-mem
+     Command: xrun top.sv mem.sv mem_test.sv -gui -access +rwc -licqueue -noievlic
+
+ 
+*** Message Type: error ***
+When: Wed May 11 11:21:09 MST 2022
+XM-Sim Crashed:
+      Design: worklib.top:sv
+   Languages: verilog
+   Simulator: XM-Sim
+     Version: TOOL:     xmsim   20.11-a001
+        User: nxf87847
+        Host: awv124164.nxdi.us-cdc01.nxp.com
+Time Started: Wed May 11 10:56:53 MST 2022
+  Process ID: 99802
+   Directory: /home/nxf87847/sv_lab/SysVlogDesVer_20_6/lab06-mem
+     Command: xrun top.sv mem.sv mem_test.sv -gui -access +rwc -licqueue -noievlic
+      Design: worklib.top:sv
+   Languages: verilog
+   Simulator: XM-Sim
+     Version: TOOL:  xmsim   20.11-a001
+        User: nxf87847
+        Host: awv124164.nxdi.us-cdc01.nxp.com
+Time Started: Wed May 11 10:56:53 MST 2022
+  Process ID: 99802
+   Directory: /home/nxf87847/sv_lab/SysVlogDesVer_20_6/lab06-mem
+     Command: xrun top.sv mem.sv mem_test.sv -gui -access +rwc -licqueue -noievlic
+
+Outstanding STRAP Requests:
+        strap::report enable out
+ 
+*** Message Type: info ***
+When: Wed May 11 11:21:18 MST 2022
+Recall Simulator
+ 
+*** Message Type: info ***
+When: Wed May 11 11:21:24 MST 2022
+Delete browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Wed May 11 11:21:27 MST 2022
+Delete waveform window: "Waveform 1"
+ 
+*** Message Type: error ***
+When: Wed May 11 11:21:54 MST 2022
+slave "" does not exist
+    while executing
+"error "slave \"$slave\" does not exist""
+    (object "::taskmaster" method "::stuff::TaskMaster::delegate" body line 12)
+    invoked from within
+"::taskmaster delegate $slave sim.terminate"
+    (object "::application" method "::Application::shutdown" body line 65)
+    invoked from within
+"application shutdown"
+    (while executing background task for duty "shutdown" in owner exit)
+ 
+*** Message Type: error ***
+When: Thu May 12 06:54:25 MST 2022
+invalid command name "::.console0"
+    while executing
+"::.console0 _doExit -force"
+    (in namespace inscope "::Console" script line 1)
+    invoked from within
+"namespace inscope ::Console {::.console0 _doExit -force}"
+    ("after" script)
+ 

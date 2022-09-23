@@ -1,0 +1,33 @@
+csi-xmvlog - CSI: Command line:
+xmvlog
+    -f /home/nxf87847/sv_lab/SysVlogDesVer_20_6/lab10-memrnd/xcelium.d/run.lnx86.20.11.d/xmvlog.args
+        -XLMODE ./xcelium.d/run.lnx86.20.11.d
+        -RUNMODE
+        intf.sv
+        top.sv
+        mem.sv
+        mem_test.sv
+        -CDSLIB ./xcelium.d/run.lnx86.20.11.d/cdsrun.lib
+        -HDLVAR ./xcelium.d/run.lnx86.20.11.d/hdlrun.var
+        -MESSAGES
+        -UPDATE
+        -XLLIBSTORE ./xcelium.d/run.lnx86.20.11.d/xllibs
+        -ALLOWUNBOUND
+    -CHECK_VERSION TOOL:	xrun	20.11-a001
+    -LOG_FD 4
+
+csi-xmvlog - CSI: *F,INTERR: INTERNAL EXCEPTION
+-----------------------------------------------------------------
+The tool has encountered an unexpected condition and must exit.
+Contact Cadence Design Systems customer support about this
+problem and provide enough information to help us reproduce it,
+including the logfile that contains this error message.
+  TOOL:	xmvlog	20.11-a001
+  HOSTNAME: awv123662.nxdi.us-cdc01.nxp.com
+  OPERATING SYSTEM: Linux 3.10.0-1160.36.2.el7.x86_64 #1 SMP Thu Jul 8 02:53:40 UTC 2021 x86_64
+  MESSAGE: p1_scope_sv_randomize_with resync (330)
+-----------------------------------------------------------------
+
+csi-xmvlog - CSI: Cadence Support Investigation, recording details
+Error: Error processing callstack!
+csi-xmvlog - CSI: investigation complete took 0.000 secs, send this file to Cadence Support

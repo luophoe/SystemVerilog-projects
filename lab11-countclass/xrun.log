@@ -1,0 +1,61 @@
+xrun: 20.11-a001: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	xrun	20.11-a001: Started on May 17, 2022 at 06:31:00 MST
+/pkg/cadence-xcelium-/20.11.001/i686-linux/tools/bin/xrun
+	counter.sv
+	-licqueue
+	-noievlic
+xrun: *W,ENVDEPRREN: Environment Variable (IRUNOPTS) is deprecated. Use (XRUNOPTS) instead.
+xrun: *W,ENVBOTHDEF: Deprecated Environment Variable (IRUNOPTS) and corresponding Xcelium variable (XRUNOPTS) have both been been defined; Xcelium variable shall override.
+Recompiling... reason: file './counter.sv' is newer than expected.
+	expected: Tue May 17 06:25:28 2022
+	actual:   Tue May 17 06:30:58 2022
+file: counter.sv
+	module worklib.counterclass:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		counterclass
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.counterclass:sv <0x437e9ec1>
+			streams:  31, words: 16711
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                    1       1
+		Registers:                 35      40
+		Initial blocks:             7       7
+		SV Class declarations:      3       3
+		SV Class specializations:   3       3
+	Writing initial simulation snapshot: worklib.counterclass:sv
+xmsim: *W,ENVDEPRREN: Environment Variable (NCSIMOPTS) is deprecated. Use (XMSIMOPTS) instead.
+Loading snapshot worklib.counterclass:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /pkg/cadence-xcelium-/20.11.001/i686-linux/tools/xcelium/files/xmsimrc
+xcelium> run
+WARNING: set value is out of bound.
+The counter value is:           0
+The value is           1 and the carry is 0
+The value is           2 and the carry is 0
+The value is           3 and the carry is 0
+The value is           4 and the carry is 0
+The value is           5 and the carry is 0
+The value is           0 and the carry is 1
+The value is           1 and the carry is 0
+The value is           2 and the carry is 0
+The counter value is:           2
+The counter value is:          10
+The value is           9 and the borrow is 0
+The value is           8 and the borrow is 0
+The value is          12 and the borrow is 1
+The value is          11 and the borrow is 0
+The value is          10 and the borrow is 0
+The counter value is:          10
+The number of upcounter is:           3
+The number of downcounter is:           2
+xmsim: *W,RNQUIE: Simulation is complete.
+xcelium> exit
+TOOL:	xrun	20.11-a001: Exiting on May 17, 2022 at 06:31:15 MST  (total: 00:00:15)

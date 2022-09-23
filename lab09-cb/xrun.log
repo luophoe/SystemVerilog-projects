@@ -1,0 +1,61 @@
+xrun: 20.11-a001: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	xrun	20.11-a001: Started on May 13, 2022 at 08:36:35 MST
+/pkg/cadence-xcelium-/20.11.001/i686-linux/tools/bin/xrun
+	flipflop.sv
+	flipflop_test.sv
+	-gui
+	-access +rwc
+	-licqueue
+	-noievlic
+xrun: *W,ENVDEPRREN: Environment Variable (IRUNOPTS) is deprecated. Use (XRUNOPTS) instead.
+xrun: *W,ENVBOTHDEF: Deprecated Environment Variable (IRUNOPTS) and corresponding Xcelium variable (XRUNOPTS) have both been been defined; Xcelium variable shall override.
+Recompiling... reason: file './flipflop_test.sv' is newer than expected.
+	expected: Fri May 13 08:19:30 2022
+	actual:   Fri May 13 08:36:23 2022
+file: flipflop_test.sv
+	module worklib.testflop:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		testflop
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: ..........
+   ##3 cb.reset <= 0;
+    |
+xmelab: *W,CLKCNDW (./flipflop_test.sv,42|4): A procedural cycle delay always requires a default clocking block [IEEE STD 1800-2009].
+.......... Done
+	Generating native compiled code:
+		worklib.testflop:sv <0x504a2951>
+			streams:  13, words:  6689
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           6       6
+		Scalar wires:        2       -
+		Vectored wires:      3       -
+		Always blocks:       2       2
+		Initial blocks:      3       3
+		Clocking blocks:     1       1
+		Clocking items:      3       3
+		Pseudo assignments:  4       4
+	Writing initial simulation snapshot: worklib.testflop:sv
+xmsim: *W,ENVDEPRREN: Environment Variable (NCSIMOPTS) is deprecated. Use (XMSIMOPTS) instead.
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /pkg/cadence-xcelium-/20.11.001/i686-linux/tools/xcelium/files/xmsimrc
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm testflop.clk testflop.qin testflop.qout testflop.reset
+Created probe 1
+xcelium> run
+Simulation complete via $finish(1) at time 10 NS + 2
+./flipflop_test.sv:50    $finish();
+xcelium> ^C
+xcelium> exit
+TOOL:	xrun	20.11-a001: Exiting on May 13, 2022 at 08:40:30 MST  (total: 00:03:55)

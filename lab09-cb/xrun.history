@@ -1,0 +1,2 @@
+s1(13May2022:08:20:04):  /pkg/cadence-xcelium-/20.11.001/i686-linux/tools/bin/xrun flipflop.sv flipflop_test.sv -gui -access +rwc 
+s2(13May2022:08:36:35):  /pkg/cadence-xcelium-/20.11.001/i686-linux/tools/bin/xrun flipflop.sv flipflop_test.sv -gui -access +rwc 

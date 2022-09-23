@@ -1,0 +1,25 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-LICQUEUE
+-NOIEVLIC
+-MESSAGES
++EMGRLOG
+xrun.log
+-XLSTIME
+1652275598
+-XLKEEP
+-XLMODE
+./xcelium.d/run.lnx86.20.11.d
+-RUNMODE
+-CDSLIB
+./xcelium.d/run.lnx86.20.11.d/cds.lib
+-HDLVAR
+./xcelium.d/run.lnx86.20.11.d/hdl.var
+-XLNAME
+xrun
+-XLVERSION
+"TOOL:	xrun	20.11-a001"
+-XLNAME
+./xcelium.d/run.lnx86.20.11.d/awv124164.nxdi.us-cdc01.nxp.com_82991

@@ -1,0 +1,8 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+counter.sv
+counter_test.sv
+-licqueue
+-noievlic

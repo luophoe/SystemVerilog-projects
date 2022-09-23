@@ -1,0 +1,19 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-XLMODE
+./xcelium.d/run.lnx86.20.11.d
+-RUNMODE
+top.sv
+mem.sv
+mem_test.sv
+-CDSLIB
+./xcelium.d/run.lnx86.20.11.d/cdsrun.lib
+-HDLVAR
+./xcelium.d/run.lnx86.20.11.d/hdlrun.var
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./xcelium.d/run.lnx86.20.11.d/xllibs
+-ALLOWUNBOUND

@@ -1,0 +1,71 @@
+irun: 15.10-s027: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	irun	15.10-s027: Started on May 09, 2022 at 12:49:13 MST
+/pkg/cadence-incisiv-/15.10.027/i686-linux/tools/bin/irun
+	counter.sv
+	counter_test.sv
+	-licqueue
+	-noievlic
+Recompiling... reason: file './counter.sv' is newer than expected.
+	expected: Mon May  9 12:46:51 2022
+	actual:   Mon May  9 12:49:01 2022
+file: counter.sv
+	module worklib.counter:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		counter_test
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.counter:sv <0x4bf3eb47>
+			streams:   2, words:   683
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                   2       2
+		Registers:                 8       8
+		Scalar wires:              4       -
+		Vectored wires:            3       -
+		Always blocks:             2       2
+		Initial blocks:            3       3
+		Pseudo assignments:        6       6
+		Simulation timescale:  100ps
+	Writing initial simulation snapshot: worklib.counter_test:sv
+Loading snapshot worklib.counter_test:sv .................... Done
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+ncsim> source /pkg/cadence-incisiv-/15.10.027/i686-linux/tools/inca/files/ncsimrc
+ncsim> run
+time=   0ns clk=1 rst_=x load=x enable=x data=xx count=00
+time=   5ns clk=0 rst_=0 load=x enable=x data=xx count=00
+time=  10ns clk=1 rst_=0 load=x enable=x data=xx count=00
+time=  15ns clk=0 rst_=1 load=0 enable=1 data=xx count=00
+time=  20ns clk=1 rst_=1 load=0 enable=1 data=xx count=01
+time=  25ns clk=0 rst_=1 load=0 enable=1 data=xx count=01
+time=  30ns clk=1 rst_=1 load=0 enable=1 data=xx count=02
+time=  35ns clk=0 rst_=1 load=0 enable=1 data=xx count=02
+time=  40ns clk=1 rst_=1 load=0 enable=1 data=xx count=03
+time=  45ns clk=0 rst_=1 load=0 enable=1 data=xx count=03
+time=  50ns clk=1 rst_=1 load=0 enable=1 data=xx count=04
+time=  55ns clk=0 rst_=1 load=0 enable=0 data=xx count=04
+time=  60ns clk=1 rst_=1 load=0 enable=0 data=xx count=04
+time=  65ns clk=0 rst_=1 load=0 enable=0 data=xx count=04
+time=  70ns clk=1 rst_=1 load=0 enable=0 data=xx count=04
+time=  75ns clk=0 rst_=1 load=1 enable=0 data=15 count=04
+time=  80ns clk=1 rst_=1 load=1 enable=0 data=15 count=15
+time=  85ns clk=0 rst_=1 load=1 enable=1 data=1d count=15
+time=  90ns clk=1 rst_=1 load=1 enable=1 data=1d count=1d
+time=  95ns clk=0 rst_=1 load=0 enable=1 data=xx count=1d
+time= 100ns clk=1 rst_=1 load=0 enable=1 data=xx count=1e
+time= 105ns clk=0 rst_=1 load=0 enable=1 data=xx count=1e
+time= 110ns clk=1 rst_=1 load=0 enable=1 data=xx count=1f
+time= 115ns clk=0 rst_=1 load=0 enable=1 data=xx count=1f
+time= 120ns clk=1 rst_=1 load=0 enable=1 data=xx count=00
+time= 125ns clk=0 rst_=1 load=0 enable=1 data=xx count=00
+time= 130ns clk=1 rst_=1 load=0 enable=1 data=xx count=01
+COUNTER TEST PASSED
+Simulation complete via $finish(1) at time 135 NS + 0
+./counter_test.sv:84       $finish;
+ncsim> exit
+TOOL:	irun	15.10-s027: Exiting on May 09, 2022 at 12:49:42 MST  (total: 00:00:29)

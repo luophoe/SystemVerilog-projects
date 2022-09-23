@@ -1,0 +1,40 @@
+irun: 15.10-s027: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	irun	15.10-s027: Started on May 10, 2022 at 11:18:42 MST
+/pkg/cadence-incisiv-/15.10.027/i686-linux/tools/bin/irun
+	typedefs.sv
+	control.sv
+	control_test.sv
+	-licqueue
+	-noievlic
+file: control.sv
+   hlt = (opcode == 0) ? 1 : 0;
+       |
+ncvlog: *E,EXPLPA (control.sv,42|7): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+   hlt = (opcode == 0) ? 1 : 0;
+                       |
+ncvlog: *E,EXPSMC (control.sv,42|23): expecting a semicolon (';') [12.1.2][7.1(IEEE)].
+   skz = (opcode == 1) ? 1 : 0;
+       |
+ncvlog: *E,EXPLPA (control.sv,43|7): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+   skz = (opcode == 1) ? 1 : 0;
+                       |
+ncvlog: *E,EXPSMC (control.sv,43|23): expecting a semicolon (';') [12.1.2][7.1(IEEE)].
+   jmp = (opcode == 7 && zero) ? 1 : 0;
+       |
+ncvlog: *E,EXPLPA (control.sv,44|7): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+   jmp = (opcode == 7 && zero) ? 1 : 0;
+                               |
+ncvlog: *E,EXPSMC (control.sv,44|31): expecting a semicolon (';') [12.1.2][7.1(IEEE)].
+   sto = (opcode == 6) ? 1 : 0;
+       |
+ncvlog: *E,EXPLPA (control.sv,45|7): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+   sto = (opcode == 6) ? 1 : 0;
+                       |
+ncvlog: *E,EXPSMC (control.sv,45|23): expecting a semicolon (';') [12.1.2][7.1(IEEE)].
+   unique case (st)
+        |
+ncvlog: *E,EXPENM (control.sv,47|8): expecting the keyword 'endmodule' [12.1(IEEE)].
+	module worklib.control:sv
+		errors: 9, warnings: 0
+irun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	irun	15.10-s027: Exiting on May 10, 2022 at 11:18:42 MST  (total: 00:00:00)

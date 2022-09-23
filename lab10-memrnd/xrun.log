@@ -1,0 +1,256 @@
+xrun: 20.11-a001: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	xrun	20.11-a001: Started on May 17, 2022 at 12:36:14 MST
+/pkg/cadence-xcelium-/20.11.001/i686-linux/tools/bin/xrun
+	top.sv
+	mem.sv
+	mem_test.sv
+	-licqueue
+	-noievlic
+xrun: *W,ENVDEPRREN: Environment Variable (IRUNOPTS) is deprecated. Use (XRUNOPTS) instead.
+xrun: *W,ENVBOTHDEF: Deprecated Environment Variable (IRUNOPTS) and corresponding Xcelium variable (XRUNOPTS) have both been been defined; Xcelium variable shall override.
+file: top.sv
+	module worklib.top:sv
+		errors: 0, warnings: 0
+file: mem.sv
+	module worklib.mem:sv
+		errors: 0, warnings: 0
+file: mem_test.sv
+	module worklib.mem_test:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+	Top level design units:
+		top
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.mem:sv <0x28dbec52>
+			streams:   4, words:  1201
+		worklib.mem_test:sv <0x058d509a>
+			streams:   3, words:  5863
+		worklib.top:sv <0x14b6b25b>
+			streams:   1, words:   195
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                   3       3
+		Interfaces:                1       1
+		Registers:                24      24
+		Scalar wires:              1       -
+		Always blocks:             3       3
+		Initial blocks:            3       3
+		Simulation timescale:  100ps
+	Writing initial simulation snapshot: worklib.top:sv
+xmsim: *W,ENVDEPRREN: Environment Variable (NCSIMOPTS) is deprecated. Use (XMSIMOPTS) instead.
+Loading snapshot worklib.top:sv .................... Done
+SVSEED default: 1
+xmsim: *W,RNDXCELON: A newer version of the SystemVerilog constraint solver is being used which has better support for array-solving, new solve-order mechanism, and seed stability enhancements..
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /pkg/cadence-xcelium-/20.11.001/i686-linux/tools/xcelium/files/xmsimrc
+xcelium> run
+Clear Memory Test
+Write addr: 00000, Write data: 
+Write addr: 00001, Write data: 
+Write addr: 00010, Write data: 
+Write addr: 00011, Write data: 
+Write addr: 00100, Write data: 
+Write addr: 00101, Write data: 
+Write addr: 00110, Write data: 
+Write addr: 00111, Write data: 
+Write addr: 01000, Write data: 
+Write addr: 01001, Write data: 
+Write addr: 01010, Write data: 
+Write addr: 01011, Write data: 
+Write addr: 01100, Write data: 
+Write addr: 01101, Write data: 
+Write addr: 01110, Write data: 
+Write addr: 01111, Write data: 
+Write addr: 10000, Write data: 
+Write addr: 10001, Write data: 
+Write addr: 10010, Write data: 
+Write addr: 10011, Write data: 
+Write addr: 10100, Write data: 
+Write addr: 10101, Write data: 
+Write addr: 10110, Write data: 
+Write addr: 10111, Write data: 
+Write addr: 11000, Write data: 
+Write addr: 11001, Write data: 
+Write addr: 11010, Write data: 
+Write addr: 11011, Write data: 
+Write addr: 11100, Write data: 
+Write addr: 11101, Write data: 
+Write addr: 11110, Write data: 
+Write addr: 11111, Write data: 
+Read addr: 00000, Read data: 
+Read addr: 00001, Read data: 
+Read addr: 00010, Read data: 
+Read addr: 00011, Read data: 
+Read addr: 00100, Read data: 
+Read addr: 00101, Read data: 
+Read addr: 00110, Read data: 
+Read addr: 00111, Read data: 
+Read addr: 01000, Read data: 
+Read addr: 01001, Read data: 
+Read addr: 01010, Read data: 
+Read addr: 01011, Read data: 
+Read addr: 01100, Read data: 
+Read addr: 01101, Read data: 
+Read addr: 01110, Read data: 
+Read addr: 01111, Read data: 
+Read addr: 10000, Read data: 
+Read addr: 10001, Read data: 
+Read addr: 10010, Read data: 
+Read addr: 10011, Read data: 
+Read addr: 10100, Read data: 
+Read addr: 10101, Read data: 
+Read addr: 10110, Read data: 
+Read addr: 10111, Read data: 
+Read addr: 11000, Read data: 
+Read addr: 11001, Read data: 
+Read addr: 11010, Read data: 
+Read addr: 11011, Read data: 
+Read addr: 11100, Read data: 
+Read addr: 11101, Read data: 
+Read addr: 11110, Read data: 
+Read addr: 11111, Read data: 
+Test passed.
+Data = Address Test
+Write addr: 00000, Write data: 
+Write addr: 00001, Write data: 
+Write addr: 00010, Write data: 
+Write addr: 00011, Write data: 
+Write addr: 00100, Write data: 
+Write addr: 00101, Write data: 
+Write addr: 00110, Write data: 
+Write addr: 00111, Write data: 
+Write addr: 01000, Write data: 
+Write addr: 01001, Write data: 	
+Write addr: 01010, Write data: 
+
+Write addr: 01011, Write data: 
+Write addr: 01100, Write data: 
+Write addr: 01101, Write data: 
+Write addr: 01110, Write data: 
+Write addr: 01111, Write data: 
+Write addr: 10000, Write data: 
+Write addr: 10001, Write data: 
+Write addr: 10010, Write data: 
+Write addr: 10011, Write data: 
+Write addr: 10100, Write data: 
+Write addr: 10101, Write data: 
+Write addr: 10110, Write data: 
+Write addr: 10111, Write data: 
+Write addr: 11000, Write data: 
+Write addr: 11001, Write data: 
+Write addr: 11010, Write data: 
+Write addr: 11011, Write data: 
+Write addr: 11100, Write data: 
+Write addr: 11101, Write data: 
+Write addr: 11110, Write data: 
+Write addr: 11111, Write data: 
+Read addr: 00000, Read data: 
+Read addr: 00001, Read data: 
+Read addr: 00010, Read data: 
+Read addr: 00011, Read data: 
+Read addr: 00100, Read data: 
+Read addr: 00101, Read data: 
+Read addr: 00110, Read data: 
+Read addr: 00111, Read data: 
+Read addr: 01000, Read data: 
+Read addr: 01001, Read data: 	
+Read addr: 01010, Read data: 
+
+Read addr: 01011, Read data: 
+Read addr: 01100, Read data: 
+Read addr: 01101, Read data: 
+Read addr: 01110, Read data: 
+Read addr: 01111, Read data: 
+Read addr: 10000, Read data: 
+Read addr: 10001, Read data: 
+Read addr: 10010, Read data: 
+Read addr: 10011, Read data: 
+Read addr: 10100, Read data: 
+Read addr: 10101, Read data: 
+Read addr: 10110, Read data: 
+Read addr: 10111, Read data: 
+Read addr: 11000, Read data: 
+Read addr: 11001, Read data: 
+Read addr: 11010, Read data: 
+Read addr: 11011, Read data: 
+Read addr: 11100, Read data: 
+Read addr: 11101, Read data: 
+Read addr: 11110, Read data: 
+Read addr: 11111, Read data: 
+Test passed.
+Data = Random Data
+Write addr: 00000, Write data: O
+Read addr: 00000, Read data: O
+Write addr: 00001, Write data: R
+Read addr: 00001, Read data: R
+Write addr: 00010, Write data: U
+Read addr: 00010, Read data: U
+Write addr: 00011, Write data: v
+Read addr: 00011, Read data: v
+Write addr: 00100, Write data: x
+Read addr: 00100, Read data: x
+Write addr: 00101, Write data: Y
+Read addr: 00101, Read data: Y
+Write addr: 00110, Write data: j
+Read addr: 00110, Read data: j
+Write addr: 00111, Write data: P
+Read addr: 00111, Read data: P
+Write addr: 01000, Write data: D
+Read addr: 01000, Read data: D
+Write addr: 01001, Write data: Z
+Read addr: 01001, Read data: Z
+Write addr: 01010, Write data: w
+Read addr: 01010, Read data: w
+Write addr: 01011, Write data: o
+Read addr: 01011, Read data: o
+Write addr: 01100, Write data: H
+Read addr: 01100, Read data: H
+Write addr: 01101, Write data: H
+Read addr: 01101, Read data: H
+Write addr: 01110, Write data: p
+Read addr: 01110, Read data: p
+Write addr: 01111, Write data: p
+Read addr: 01111, Read data: p
+Write addr: 10000, Write data: G
+Read addr: 10000, Read data: G
+Write addr: 10001, Write data: X
+Read addr: 10001, Read data: X
+Write addr: 10010, Write data: D
+Read addr: 10010, Read data: D
+Write addr: 10011, Write data: H
+Read addr: 10011, Read data: H
+Write addr: 10100, Write data: W
+Read addr: 10100, Read data: W
+Write addr: 10101, Write data: D
+Read addr: 10101, Read data: D
+Write addr: 10110, Write data: A
+Read addr: 10110, Read data: A
+Write addr: 10111, Write data: E
+Read addr: 10111, Read data: E
+Write addr: 11000, Write data: F
+Read addr: 11000, Read data: F
+Write addr: 11001, Write data: K
+Read addr: 11001, Read data: K
+Write addr: 11010, Write data: Y
+Read addr: 11010, Read data: Y
+Write addr: 11011, Write data: J
+Read addr: 11011, Read data: J
+Write addr: 11100, Write data: O
+Read addr: 11100, Read data: O
+Write addr: 11101, Write data: R
+Read addr: 11101, Read data: R
+Write addr: 11110, Write data: Q
+Read addr: 11110, Read data: Q
+Write addr: 11111, Write data: S
+Read addr: 11111, Read data: S
+Test passed.
+Simulation complete via $finish(1) at time 3830 NS + 1
+./mem_test.sv:91     $finish;
+xcelium> exit
+TOOL:	xrun	20.11-a001: Exiting on May 17, 2022 at 12:37:10 MST  (total: 00:00:56)

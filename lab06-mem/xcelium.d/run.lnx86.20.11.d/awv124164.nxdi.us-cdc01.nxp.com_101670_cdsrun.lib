@@ -1,0 +1,2 @@
+SOFTINCLUDE /pkg/cadence-xcelium-/20.11.001/i686-linux/tools/inca/files/cds.lib
+define worklib ../worklib

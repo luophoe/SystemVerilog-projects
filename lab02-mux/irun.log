@@ -1,0 +1,53 @@
+irun: 15.10-s027: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	irun	15.10-s027: Started on May 09, 2022 at 10:42:05 MST
+/pkg/cadence-incisiv-/15.10.027/i686-linux/tools/bin/irun
+	scale_mux.sv
+	scale_mux_test.sv
+	-licqueue
+	-noievlic
+file: scale_mux.sv
+	module worklib.scale_mux:sv
+		errors: 0, warnings: 0
+file: scale_mux_test.sv
+	module worklib.scale_mux_test:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		scale_mux_test
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.scale_mux:sv <0x03bd7d38>
+			streams:   2, words:  1799
+		worklib.scale_mux_test:sv <0x1aa94e47>
+			streams:   8, words: 10695
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                   2       2
+		Registers:                 6       6
+		Scalar wires:              1       -
+		Vectored wires:            4       -
+		Always blocks:             1       1
+		Initial blocks:            2       2
+		Pseudo assignments:        4       4
+		Simulation timescale:  100ps
+	Writing initial simulation snapshot: worklib.scale_mux_test:sv
+Loading snapshot worklib.scale_mux_test:sv .................... Done
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+ncsim> source /pkg/cadence-incisiv-/15.10.027/i686-linux/tools/inca/files/ncsimrc
+ncsim> run
+0ns in_a=00 in_b=00 sel_a=0 out=00
+1ns in_a=00 in_b=00 sel_a=1 out=00
+2ns in_a=00 in_b=ff sel_a=0 out=ff
+3ns in_a=00 in_b=ff sel_a=1 out=00
+4ns in_a=ff in_b=00 sel_a=0 out=00
+5ns in_a=ff in_b=00 sel_a=1 out=ff
+6ns in_a=ff in_b=ff sel_a=0 out=ff
+7ns in_a=ff in_b=ff sel_a=1 out=ff
+MUX TEST PASSED
+./scale_mux_test.sv:58       $finish(0) ;
+ncsim> exit
+TOOL:	irun	15.10-s027: Exiting on May 09, 2022 at 10:42:35 MST  (total: 00:00:30)

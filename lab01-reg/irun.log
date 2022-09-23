@@ -1,0 +1,55 @@
+irun: 15.10-s027: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	irun	15.10-s027: Started on May 09, 2022 at 09:36:59 MST
+/pkg/cadence-incisiv-/15.10.027/i686-linux/tools/bin/irun
+	register.sv
+	register_test.sv
+	-licqueue
+	-noievlic
+Recompiling... reason: file './register.sv' is newer than expected.
+	expected: Mon May  9 09:02:59 2022
+	actual:   Mon May  9 09:36:55 2022
+file: register.sv
+	module worklib.register:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		register_test
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.register:sv <0x43bfb40f>
+			streams:   2, words:   544
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                   2       2
+		Registers:                 7       7
+		Scalar wires:              3       -
+		Vectored wires:            3       -
+		Always blocks:             2       2
+		Initial blocks:            4       4
+		Pseudo assignments:        5       5
+		Simulation timescale:  100ps
+	Writing initial simulation snapshot: worklib.register_test:sv
+Loading snapshot worklib.register_test:sv .................... Done
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+ncsim> source /pkg/cadence-incisiv-/15.10.027/i686-linux/tools/inca/files/ncsimrc
+ncsim> run
+time=   0.0 ns enable=x rst_=1 data=xx out=xx
+time=  15.0 ns enable=x rst_=0 data=xx out=00
+time=  25.0 ns enable=0 rst_=1 data=xx out=00
+time=  35.0 ns enable=1 rst_=1 data=aa out=00
+time=  40.0 ns enable=1 rst_=1 data=aa out=aa
+time=  45.0 ns enable=0 rst_=1 data=55 out=aa
+time=  55.0 ns enable=x rst_=0 data=xx out=00
+time=  65.0 ns enable=0 rst_=1 data=xx out=00
+time=  75.0 ns enable=1 rst_=1 data=55 out=00
+time=  80.0 ns enable=1 rst_=1 data=55 out=55
+time=  85.0 ns enable=0 rst_=1 data=aa out=55
+REGISTER TEST PASSED
+Simulation complete via $finish(1) at time 95 NS + 0
+./register_test.sv:65       $finish;
+ncsim> exit
+TOOL:	irun	15.10-s027: Exiting on May 09, 2022 at 09:37:30 MST  (total: 00:00:31)

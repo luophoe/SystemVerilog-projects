@@ -1,0 +1,33 @@
+xrun: 20.11-a001: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	xrun	20.11-a001: Started on May 11, 2022 at 06:26:38 MST
+/pkg/cadence-xcelium-/20.11.001/i686-linux/tools/bin/xrun
+	typedefs.sv
+	alu.sv
+	alu_test.sv
+	-licqueue
+	-noievlic
+xrun: *W,ENVDEPRREN: Environment Variable (IRUNOPTS) is deprecated. Use (XRUNOPTS) instead.
+xrun: *W,ENVBOTHDEF: Deprecated Environment Variable (IRUNOPTS) and corresponding Xcelium variable (XRUNOPTS) have both been been defined; Xcelium variable shall override.
+xmsim: *W,ENVDEPRREN: Environment Variable (NCSIMOPTS) is deprecated. Use (XMSIMOPTS) instead.
+Loading snapshot worklib.alu_test:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /pkg/cadence-xcelium-/20.11.001/i686-linux/tools/xcelium/files/xmsimrc
+xcelium> run
+  20.0 ns opcode=HLT data=37 accum=da | zero=0 out=da
+  30.0 ns opcode=SKZ data=37 accum=da | zero=0 out=da
+  40.0 ns opcode=ADD data=37 accum=da | zero=0 out=11
+  50.0 ns opcode=AND data=37 accum=da | zero=0 out=12
+  60.0 ns opcode=XOR data=37 accum=da | zero=0 out=ed
+  70.0 ns opcode=LDA data=37 accum=da | zero=0 out=37
+  80.0 ns opcode=STO data=37 accum=da | zero=0 out=da
+  90.0 ns opcode=TMP data=37 accum=00 | zero=1 out=00
+ 100.0 ns opcode=ADD data=07 accum=12 | zero=0 out=19
+ 110.0 ns opcode=AND data=1f accum=35 | zero=0 out=15
+ 120.0 ns opcode=XOR data=1e accum=1d | zero=0 out=03
+ 130.0 ns opcode=LDA data=72 accum=00 | zero=1 out=72
+ 140.0 ns opcode=STO data=00 accum=10 | zero=0 out=10
+ALU TEST PASSED
+Simulation complete via $finish(1) at time 140 NS + 0
+./alu_test.sv:71       $finish;
+xcelium> exit
+TOOL:	xrun	20.11-a001: Exiting on May 11, 2022 at 06:27:26 MST  (total: 00:00:48)

@@ -1,0 +1,5 @@
+s1(10May2022:14:14:22):  /pkg/cadence-xcelium-/20.11.001/i686-linux/tools/bin/xrun typedefs.sv alu.sv alu_test.sv 
+s2(10May2022:14:14:44):  /pkg/cadence-xcelium-/20.11.001/i686-linux/tools/bin/xrun typedefs.sv alu.sv alu_test.sv 
+s3(10May2022:14:15:27):  /pkg/cadence-xcelium-/20.11.001/i686-linux/tools/bin/xrun typedefs.sv alu.sv alu_test.sv 
+s4(10May2022:14:18:07):  /pkg/cadence-xcelium-/20.11.001/i686-linux/tools/bin/xrun typedefs.sv alu.sv alu_test.sv 
+s5(11May2022:06:26:39):  /pkg/cadence-xcelium-/20.11.001/i686-linux/tools/bin/xrun typedefs.sv alu.sv alu_test.sv 
